@@ -42,11 +42,7 @@ The system detects vehicles in video feeds using OpenCV, calculates the optimal 
    ```
 2. Navigate to the project directory:
    ```bash
-   cd traffic-signal-optimization
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
+   cd open_cv
    ```
 
 ## Usage

@@ -1,7 +1,9 @@
 # Intelligent Traffic Signal Optimization
 
--[website link](https://joyful-cannoli-d6b1af.netlify.app/)
--password for website: My-Drop-Site
+## Demo
+Check out the live demo of the project [here](https://joyful-cannoli-d6b1af.netlify.app/).
+
+**Password to access the website**: `My-Drop-Site`
 
 
 ## Table of Contents

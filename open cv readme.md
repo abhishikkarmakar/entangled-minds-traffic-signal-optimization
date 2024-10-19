@@ -1,54 +1,70 @@
+# Intelligent Traffic Signal Optimization using Deep Q-Learning and Reinforcement Learning
 
----
-
-# Intelligent Traffic Signal Optimization using Deep Q-Learning
+[![Python version](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![OpenCV version](https://img.shields.io/badge/OpenCV-4.5.1-green.svg)](https://opencv.org/)
+[![TensorFlow version](https://img.shields.io/badge/TensorFlow-2.6.0-yellow.svg)](https://www.tensorflow.org/)
+[![NumPy version](https://img.shields.io/badge/NumPy-1.21.2-blue.svg)](https://numpy.org/)
 
 ## Introduction
-This project implements an intelligent traffic signal optimization algorithm that uses Deep Q-Learning (DQN) to dynamically adjust traffic signal timings based on real-time vehicle counts captured from video footage. The objective is to minimize vehicle wait times and improve traffic flow efficiency.
+This project implements an intelligent traffic signal optimization algorithm using Deep Q-Learning (DQN) and reinforcement learning techniques to dynamically adjust signal timings based on real-time vehicle counts from video feeds. The goal is to minimize vehicle wait times and improve overall traffic flow by adjusting the signal timings according to traffic density.
+
+## Problem Statement
+Traffic congestion is a growing problem in urban areas, leading to delays, fuel wastage, and higher pollution levels. Traditional traffic systems rely on fixed signal timings, which are not optimized for varying traffic conditions throughout the day. This project aims to address this issue by creating a dynamic, data-driven traffic management system.
 
 ## Project Overview
-The algorithm detects vehicles in video feeds using OpenCV and calculates the optimal signal timings based on the number of vehicles detected in each lane. It employs reinforcement learning to adaptively modify detection parameters, allowing for real-time adjustments to the traffic signal based on current traffic conditions.
+The system detects vehicles in video feeds using OpenCV, calculates the optimal signal timings based on the number of vehicles detected in each lane, and employs a reinforcement learning algorithm to adaptively adjust the signal timings in real time. By using Deep Q-Learning, the system improves its decision-making process to optimize traffic flow at intersections.
+
+## Demo
+- Live demo of the project: [Check it out here](https://joyful-cannoli-d6b1af.netlify.app/)
+- **Password to access the website**: `My-Drop-Site`
 
 ## Technologies Used
-- Python
-- OpenCV
-- TensorFlow
-- NumPy
-- Random
-- Collections (deque)
+- **Python**: Main programming language
+- **OpenCV**: For vehicle detection and video processing
+- **TensorFlow**: To implement Deep Q-Learning (DQN)
+- **NumPy**: For efficient numerical operations
+- **Matplotlib**: For visualizing traffic data and training performance
+- **HTML/CSS/JavaScript**: Frontend for the demo interface
 
 ## Algorithm
-1. **Vehicle Detection**: Utilize OpenCV to process video feeds and detect vehicles. The detection results are used to count vehicles in each lane.
-2. **Deep Q-Learning (DQN)**: Implement a DQN agent to learn optimal actions for adjusting detection parameters based on vehicle counts.
-3. **Signal Timing Calculation**: Calculate the optimal signal timing for each lane based on the detected vehicle counts and use this information to determine signal colors.
-4. **Real-time Adjustments**: Use the DQN agent to adjust the vehicle detection thresholds dynamically to improve detection accuracy and optimize traffic signal timings.
+1. **Vehicle Detection**: OpenCV processes real-time video feeds to detect and count vehicles in each lane.
+2. **Reinforcement Learning (Deep Q-Learning)**: 
+   - A DQN agent is trained to learn optimal traffic signal timings based on traffic flow patterns.
+   - The agent selects actions (signal changes) that minimize overall vehicle wait times.
+3. **Signal Timing Adjustment**: The system dynamically adjusts traffic signal timings based on the real-time vehicle counts.
+4. **Simulation and Optimization**: The project includes simulations to test the algorithm in various traffic conditions and optimize signal timings based on traffic density, congestion, and time of day.
 
 ## Installation
+
 1. Clone the repository:
    ```bash
-     https://github.com/abhishikkarmakar/entangled-minds-traffic-signal-optimization.git
+   git clone https://github.com/abhishikkarmakar/entangled-minds-traffic-signal-optimization.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd open_cv
+   cd traffic-signal-optimization
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
    ```
 
 ## Usage
-1. Make sure you have video files (`video_01.mp4`, `video_02.mp4`, etc.) available in the project directory for processing.
-2. Run the script:
+1. Ensure that you have video files (`video_01.mp4`, `video_02.mp4`, etc.) in the project directory for processing.
+2. Run the main script:
    ```bash
    python main.py
    ```
-3. The program will process each video, display the vehicle detection results, and print the final vehicle counts and optimal timings for each lane.
+3. The program will process each video, detect vehicles in each lane, and calculate the optimal traffic signal timings. The results, including vehicle counts and adjusted signal timings, will be displayed in real time.
 
-## Demo
-A demo showcasing the functionality of the project can be found [here](link-to-your-demo).
+## Contributing
+Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request. 
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+## Notes
+- Make sure that the appropriate video files are present in the directory before running the script.
+- Include sample video files or instructions on how to create them for testing purposes if needed.
 
-### Notes
-- Ensure that the appropriate video files are present in the directory before running the script.
-- You may want to include sample video files or instructions on how to create them if they are not included in the repository.
+```

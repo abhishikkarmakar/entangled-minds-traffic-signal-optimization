@@ -26,7 +26,7 @@ The algorithm detects vehicles in video feeds using OpenCV and calculates the op
 ## Installation
 1. Clone the repository:
    ```bash
-   [github link](https://github.com/abhishikkarmakar/entangled-minds-traffic-signal-optimization.git)
+    (https://github.com/abhishikkarmakar/entangled-minds-traffic-signal-optimization.git)
    ```
 2. Navigate to the project directory:
    ```bash

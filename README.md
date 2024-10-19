@@ -6,17 +6,6 @@ Check out the live demo of the project [here](https://joyful-cannoli-d6b1af.netl
 **Password to access the website**: `My-Drop-Site`
 
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Project Overview](#project-overview)
-- [Technologies Used](#technologies-used)
-- [Algorithm](#algorithm)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Demo](#demo)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 This project aims to design an intelligent traffic signal optimization algorithm that dynamically adjusts signal timings based on real-time traffic flow patterns, congestion levels, and time of day. The goal is to reduce wait times and improve overall traffic flow using machine learning techniques.
 
@@ -40,26 +29,6 @@ The project leverages reinforcement learning to optimize traffic route managemen
    - Time of day
 4. **Simulation**: Create a simulation environment to test the algorithm's effectiveness in various traffic scenarios.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/intelligent-traffic-signal-optimization.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd intelligent-traffic-signal-optimization
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
-1. Run the web application:
-2. Open a web browser and go to `http://localhost:5000` to view the application.
-
-## Demo
-Check out the live demo of the project [here](link-to-your-demo).
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request.

@@ -1,7 +1,4 @@
----
-
 # Intelligent Traffic Signal Optimization
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Project Overview](#project-overview)

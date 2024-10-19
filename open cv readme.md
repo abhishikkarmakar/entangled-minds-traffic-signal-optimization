@@ -3,16 +3,6 @@
 
 # Intelligent Traffic Signal Optimization using Deep Q-Learning
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Project Overview](#project-overview)
-- [Technologies Used](#technologies-used)
-- [Algorithm](#algorithm)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Demo](#demo)
-- [License](#license)
-
 ## Introduction
 This project implements an intelligent traffic signal optimization algorithm that uses Deep Q-Learning (DQN) to dynamically adjust traffic signal timings based on real-time vehicle counts captured from video footage. The objective is to minimize vehicle wait times and improve traffic flow efficiency.
 
@@ -36,22 +26,18 @@ The algorithm detects vehicles in video feeds using OpenCV and calculates the op
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/intelligent-traffic-signal-optimization.git
+   [git clone https://github.com/yourusername/intelligent-traffic-signal-optimization.git](https://github.com/abhishikkarmakar/entangled-minds-traffic-signal-optimization.git)
    ```
 2. Navigate to the project directory:
    ```bash
    cd intelligent-traffic-signal-optimization
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
    ```
 
 ## Usage
 1. Make sure you have video files (`video_01.mp4`, `video_02.mp4`, etc.) available in the project directory for processing.
 2. Run the script:
    ```bash
-   python traffic_signal_optimization.py
+   python main.py
    ```
 3. The program will process each video, display the vehicle detection results, and print the final vehicle counts and optimal timings for each lane.
 
